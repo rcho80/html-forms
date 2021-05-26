@@ -10,17 +10,21 @@
 
 <body>
   <main>
+    <h2>Form Practice:</h2>
     <form action="">
       <div>
-        <input type="text" placeholder="Enter your full name">
+        <label for="fullName">Full Name:</label>
+        <input id="fullName" type="text" placeholder="Enter your full name">
       </div>
       <br>
       <div>
-        <input type="text" name="" id="" placeholder="Enter your email">
+        <label for="email">Email:</label>
+        <input type="text" name="" id="email" placeholder="Enter your email">
       </div>
       <br>
       <div>
-        <select name="" id="">
+        <label for="dropdown">Select One: </label>
+        <select name="" id="dropdown">
           <option value="male">male</option>
           <option value="female">female</option>
           <option value="other">other</option>
@@ -28,14 +32,12 @@
       </div>
       <br>
       <div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea placeholder="Leave a message..." name="" id="" cols="30" rows="10"></textarea>
       </div>
       <br>
       <div>
         <button>Sign Up</button>
       </div>
-
-
     </form>
   </main>
 
