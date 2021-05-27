@@ -11,20 +11,23 @@
 <body>
   <main>
     <h2>Form Practice:</h2>
-    <form action="">
+    <form action="https://formspree.io/f/moqydjln" method="POST">
       <div>
         <label for="fullName">Full Name:</label>
-        <input id="fullName" type="text" placeholder="Enter your full name">
+        <input name="form_fullname" id="fullName" type="text" placeholder="Enter your full name" required>
       </div>
       <br>
       <div>
         <label for="email">Email:</label>
-        <input type="text" name="" id="email" placeholder="Enter your email">
+        <input name="form_email" type="email" name="" id="email" placeholder="Enter your email" required>
       </div>
       <br>
       <div>
-        <label for="dropdown">Select One: </label>
-        <select name="" id="dropdown">
+        <label for="dropdown">Gender: </label>
+        <select name="form_gender" id="dropdown" required>
+          <option value="" selected disabled>
+            --Please Select--
+          </option>
           <option value="male">male</option>
           <option value="female">female</option>
           <option value="other">other</option>
@@ -32,7 +35,9 @@
       </div>
       <br>
       <div>
-        <textarea placeholder="Leave a message..." name="" id="" cols="30" rows="10"></textarea>
+        <label for="message">Message:</label>
+        <textarea placeholder="Leave a message..." name="form_message" id="message" cols="30" rows="10" required>
+            </textarea>
       </div>
       <br>
       <div>
